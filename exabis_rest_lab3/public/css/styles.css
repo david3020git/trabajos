@@ -1,0 +1,66 @@
+.grid-container {
+    display: grid;    
+    background-color: white;
+}
+.grid-box{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center; /* Centra las columnas en el contenedor si hay espacio adicional */
+    background-color: #f7f7f7;
+    padding: 20px;
+    margin: 20px;
+    gap: 10px;
+    column-gap: 10px;
+    /* box-sizing: border-box; */
+}
+
+.grid-item {
+    height: 240px auto; /* Altura fija para las cajas para mantener todas del mismo tamaño */
+    
+    width:300px;
+    overflow: hidden;
+    
+    box-sizing: border-box;
+    /* padding: 10px; */
+    background-color: white;
+    justify-content: center; /* Centra el contenido horizontalmente dentro de la caja */
+    align-items: center; /* Centra el contenido verticalmente dentro de la caja */
+    text-align: center;
+    box-shadow: #f7f7f7;
+    padding: 10px;
+    margin-top: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Suaviza la transición del hover */
+}
+.grid-item:hover {
+    background-color: #e7e7e7; /* Cambia el color de fondo al hacer hover */
+    transform: scale(1.05); /* Hace el elemento ligeramente más grande */
+    cursor: pointer; /* Cambia el cursor para indicar que es clickeable */
+}
+
+.item-preview {
+    display: none;
+    /* Estilos adicionales para el previo */
+}
+/* Estilo para el previo al hacer hover */
+.grid-item:hover .item-preview {
+    display: block; /* Asegúrate de que .item-preview sea un elemento que contenga tu previo */
+}
+
+.grid-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+
+
+p {
+    margin-top: 5px; /* Reduce el margen superior */
+    margin-bottom: 5px; /* Reduce el margen inferior */
+    padding: 0; /* Si quieres también reducir el relleno */
+}
+.container-header{
+    display: grid;
+    margin:  0 auto;
+    text-align: center;
+}
+
+ 
